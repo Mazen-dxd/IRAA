@@ -1,28 +1,31 @@
 # IRAA store guide
 
-## Update products and prices
+## Edit product details and prices
 
-1. Open products.json in the repository.
-2. Edit a product's name, price, caption, and description. Prices are Egyptian pounds as whole numbers, without commas.
-3. Edit sizes and colors as needed. Colors can be CSS names or hex values such as #541426.
-4. To remove a product, remove its full object. To add one, copy an object and give it a unique id.
-5. Save the file. GitHub Pages will publish the change.
+1. Open [products.json](https://github.com/Mazen-dxd/IRAA/blob/main/products.json).
+2. On GitHub, select the pencil icon, edit a product's name, price, caption, description, sizes, or colors, then commit the change to the main branch.
+3. Prices are EGP numbers without commas (for example, 1850). The store recalculates the cart from the current catalog price.
+4. To add a product, copy one object and give it a unique id. Keep category set to daily, occasion, or sets so the collection filters work.
+5. Replace every sample product, price, and availability before selling.
 
-Use daily, occasion, or sets for category. The count beside “الكل” updates from the catalog.
+## Add IRAA product photos
 
-## Add product photos
+Send the photos in this chat when they are ready. Add each chosen image to the repository's images/ folder using a short filename such as safa-front.jpg, then set its product's image value in products.json to images/safa-front.jpg. Use clear portrait photos with the garment visible. The current Unsplash images are placeholders.
 
-Send IRAA's photos in this chat when ready. For the live repository, add clear portrait images to images/ using short filenames such as safa-front.jpg, then set that product's image value in products.json to images/safa-front.jpg. One main photo per product is supported now; we can add alternate views later.
+## Set up WhatsApp orders
 
-## Cart, orders, and payments
+Open [store-config.json](https://github.com/Mazen-dxd/IRAA/blob/main/store-config.json) and replace the blank whatsappNumber value with IRAA's WhatsApp Business number in international format, digits only (country code plus number; omit +, spaces, and a local leading 0). The number is public because it is used by the customer's browser to open a WhatsApp chat. Do not put passwords or API keys in this file.
 
-- Every shopper has a separate cart saved in their own browser.
-- Demo checkout saves an order draft only on the shopper's device. IRAA cannot view or receive it.
-- Newsletter signup is also local to that browser and is not delivered to IRAA.
-- The site does not process payments, reserve shared inventory, calculate delivery fees, or send order notifications.
+With the number set, checkout opens a prefilled WhatsApp message containing the customer's name, delivery address, cart items, quantities, product subtotal, and notes. The customer must press Send in WhatsApp. IRAA should confirm availability, delivery fee, payment method, and the final amount in the chat before accepting the order. With the number blank, checkout fields stay disabled and no delivery details are collected.
 
-Before taking real orders, connect checkout to an IRAA-owned WhatsApp Business number or a store backend. We also need confirmed prices, available stock/sizes, delivery areas and fees, exchange policy, and a customer-service contact. Once those are provided, checkout can be configured to send the order details to you. The demo currently does not confirm a purchase.
+## Manage incoming orders
 
-## Sample content
+Orders arrive in the IRAA WhatsApp Business inbox as customer messages. Confirm each order in chat, then use WhatsApp Business labels (for example: New, Confirmed, Preparing, Dispatched, Complete) to track its progress. This setup does not automatically reserve or decrement stock, calculate delivery, collect payment, or provide an order dashboard. Maintain stock and order status manually until a commerce backend is connected.
 
-All six current products, prices, colors, descriptions, and availability are placeholders. Replace them with IRAA's confirmed catalog before accepting orders. Current Unsplash product images are visual placeholders and should be replaced with IRAA's own product photos.
+## Newsletter
+
+Email signup is disabled until IRAA connects a mailing-list service. The old demo signup did not send addresses to IRAA.
+
+## Current placeholders
+
+All six catalog products, their prices, descriptions, sizes, colors, and availability are examples. Replace them with IRAA's confirmed information. The cart is local to each shopper's browser; the message becomes an order only after the customer sends it and IRAA confirms it.
