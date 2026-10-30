@@ -27,5 +27,5 @@ The cart persists in each shopper's own browser. The checkout currently validate
 
 ## GitHub Pages
 
-The public user-site repository is https://github.com/Mazen-dxd/Mazen-dxd.github.io. Its free GitHub Pages address is https://mazen-dxd.github.io/. Pages must be enabled from the repository's Settings → Pages before the address serves the storefront.
+The public user-site repository is https://github.com/Mazen-dxd/Mazen-dxd.github.io. Its free GitHub Pages address is https://mazen-dxd.github.io/. GitHub Pages is enabled and the storefront has been published there.
 

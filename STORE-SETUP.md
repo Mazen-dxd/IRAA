@@ -8,7 +8,7 @@
 4. To remove a product, remove its full object from the list. To add one, copy an object and give it a new, unique id.
 5. Save the file. GitHub Pages updates the site from the repository.
 
-Keep category set to daily, occasion, or sets so the collection filters continue to work. The number beside “الكل” in the page is currently a visual label; it can be updated with the catalog.
+Keep category set to daily, occasion, or sets so the collection filters continue to work. The number beside “الكل” updates itself from the catalog.
 
 ## Replace product photos
 
