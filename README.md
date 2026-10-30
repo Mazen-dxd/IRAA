@@ -6,6 +6,7 @@
 
 - الموقع: https://mazen-dxd.github.io/IRAA/
 - المستودع: https://github.com/Mazen-dxd/IRAA
+- الهوية البصرية في Figma: https://www.figma.com/design/plRF5obagdz2RcdwIP4Odz
 
 ## إدارة المتجر
 
