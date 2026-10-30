@@ -16,7 +16,7 @@ Products, prices in EGP, sizes, colors, descriptions, and image paths are in [pr
 
 ## Order status
 
-Set IRAA's public WhatsApp Business number in [store-config.json](https://github.com/Mazen-dxd/IRAA/blob/main/store-config.json) to enable checkout. When the number is blank, order fields are disabled. Once configured, the customer's browser opens a prefilled WhatsApp message; the customer must send it, then IRAA confirms availability and delivery manually. This static site does not process payments or sync inventory. Current product content and prices are placeholders. Email signup remains disabled until a mailing-list service is connected.
+IRAA's WhatsApp Business checkout is configured in [store-config.json](https://github.com/Mazen-dxd/IRAA/blob/main/store-config.json). The customer's browser opens a prefilled WhatsApp message; the customer must send it, then IRAA confirms availability and delivery manually. This static site does not process payments or sync inventory. Current product content and prices are placeholders. Email signup remains disabled until a mailing-list service is connected.
 
 ## GitHub Pages
 
