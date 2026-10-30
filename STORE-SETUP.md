@@ -14,7 +14,7 @@ Send the photos in this chat when they are ready. Add each chosen image to the r
 
 ## Set up WhatsApp orders
 
-Open [store-config.json](https://github.com/Mazen-dxd/IRAA/blob/main/store-config.json) and replace the blank whatsappNumber value with IRAA's WhatsApp Business number in international format, digits only (country code plus number; omit +, spaces, and a local leading 0). The number is public because it is used by the customer's browser to open a WhatsApp chat. Do not put passwords or API keys in this file.
+IRAA's WhatsApp Business number is already set in [store-config.json](https://github.com/Mazen-dxd/IRAA/blob/main/store-config.json). To change it, use international format with digits only (country code plus number; omit +, spaces, and a local leading 0). The number is public because it is used by the customer's browser to open a WhatsApp chat. Do not put passwords or API keys in this file.
 
 With the number set, checkout opens a prefilled WhatsApp message containing the customer's name, delivery address, cart items, quantities, product subtotal, and notes. The customer must press Send in WhatsApp. IRAA should confirm availability, delivery fee, payment method, and the final amount in the chat before accepting the order. With the number blank, checkout fields stay disabled and no delivery details are collected.
 
