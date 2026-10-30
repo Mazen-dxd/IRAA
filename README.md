@@ -1,33 +1,26 @@
 # IRAA — Arabic fashion storefront
 
-An Arabic-first, right-to-left storefront for IRAA's first collection of abayas. Built as a static site and hosted for free with GitHub Pages.
+An Arabic-first, right-to-left storefront for IRAA's first collection of abayas. The site is hosted free on GitHub Pages.
 
-## Run locally
-
-Open index.html in a browser, or serve this folder with any static file server. Product photos currently use Unsplash placeholders and Arabic fonts load from Google Fonts.
-
-## Storefront interactions
+## Storefront
 
 - Collection filters, search, and price sorting
 - Product details and size selection
-- Favorites, cart quantities, and a persistent cart in each shopper's browser
-- Checkout form with validation and a locally saved demo order
-- Newsletter form with a locally saved demo signup
+- Favorites and a cart saved in each shopper's browser
+- Checkout prepared for a WhatsApp order handoff
 - Responsive mobile navigation and cart drawer
 
-## Product and photo management
+## Manage the catalog
 
-The catalog lives in products.json. Edit product names, EGP prices, labels, descriptions, color swatches, sizes, and image paths there. Add IRAA product photos to images/ and set each product's image path to the matching file. Keep each product id unique.
+Products, prices in EGP, sizes, colors, descriptions, and image paths are in [products.json](https://github.com/Mazen-dxd/IRAA/blob/main/products.json). Add IRAA photos in images/ and reference them in the catalog. See [STORE-SETUP.md](https://github.com/Mazen-dxd/IRAA/blob/main/STORE-SETUP.md) for the guide.
 
-See STORE-SETUP.md for the editing guide.
+## Order status
 
-## Orders and payments
-
-The demo checkout only saves an order draft on the shopper's own device. It does not send orders to IRAA, reserve shared stock, calculate delivery, or process payment. Do not take live orders through this demo until an order handoff or backend and the business details are configured.
+Set IRAA's public WhatsApp Business number in [store-config.json](https://github.com/Mazen-dxd/IRAA/blob/main/store-config.json) to enable checkout. When the number is blank, order fields are disabled. Once configured, the customer's browser opens a prefilled WhatsApp message; the customer must send it, then IRAA confirms availability and delivery manually. This static site does not process payments or sync inventory. Current product content and prices are placeholders. Email signup remains disabled until a mailing-list service is connected.
 
 ## GitHub Pages
 
-- Live storefront: https://mazen-dxd.github.io/IRAA/
-- Public code repository: https://github.com/Mazen-dxd/IRAA
+- Live: https://mazen-dxd.github.io/IRAA/
+- Repository: https://github.com/Mazen-dxd/IRAA
 
-This is a free GitHub Pages project address under the existing account. The shorter address iraa.github.io is owned by a different GitHub account.
+This is a free project path under the existing GitHub account. The shorter iraa.github.io address belongs to a different account.
