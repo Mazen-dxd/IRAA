@@ -1,26 +1,18 @@
-# IRAA — Arabic fashion storefront
+# IRAA — أزياء عربية معاصرة
 
-An Arabic-first, right-to-left storefront for IRAA's first collection of abayas. The site is hosted free on GitHub Pages.
+واجهة عربية أولاً لعلامة IRAA. الموقع الآن في مرحلة ما قبل الإطلاق ويعرض الصورة الأولى التي أرسلتها صاحبة العلامة. لا توجد منتجات أو أسعار منشورة إلى أن ترسل IRAA تفاصيلها المعتمدة.
 
-## Storefront
+## الموقع
 
-- Collection filters, search, and price sorting
-- Product details and size selection
-- Favorites and a cart saved in each shopper's browser
-- Checkout prepared for a WhatsApp order handoff
-- Responsive mobile navigation and cart drawer
+- مباشر: https://mazen-dxd.github.io/IRAA/
+- المستودع: https://github.com/Mazen-dxd/IRAA
 
-## Manage the catalog
+## بعد استلام المنتجات
 
-Products, prices in EGP, sizes, colors, descriptions, and image paths are in [products.json](https://github.com/Mazen-dxd/IRAA/blob/main/products.json). Add IRAA photos in images/ and reference them in the catalog. See [STORE-SETUP.md](https://github.com/Mazen-dxd/IRAA/blob/main/STORE-SETUP.md) for the guide.
+حدّث [products.json](https://github.com/Mazen-dxd/IRAA/blob/main/products.json) بالمنتجات والأسعار والصور والمقاسات والألوان المتفق عليها. دليل التحديث في [STORE-SETUP.md](https://github.com/Mazen-dxd/IRAA/blob/main/STORE-SETUP.md). لن يُفعَّل كتالوج الشراء حتى تتوفر البيانات الحقيقية.
 
-## Order status
+## التواصل
 
-IRAA's WhatsApp Business checkout is configured in [store-config.json](https://github.com/Mazen-dxd/IRAA/blob/main/store-config.json). The customer's browser opens a prefilled WhatsApp message; the customer must send it, then IRAA confirms availability and delivery manually. This static site does not process payments or sync inventory. Current product content and prices are placeholders. Email signup remains disabled until a mailing-list service is connected.
+يمكن للزائرات التواصل عبر واتساب لمتابعة موعد الإطلاق. المتجر لا يستقبل الطلبات أو المدفوعات حالياً. بعد اعتماد المجموعة يمكن إضافة سلة وتسعير وتدفق طلبات مناسبين للمنتجات.
 
-## GitHub Pages
-
-- Live: https://mazen-dxd.github.io/IRAA/
-- Repository: https://github.com/Mazen-dxd/IRAA
-
-This is a free project path under the existing GitHub account. The shorter iraa.github.io address belongs to a different account.
+صورة اللمحة الأولى: \`images/iraa-first-look.jpg\`.

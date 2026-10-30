@@ -1,63 +1,45 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#541426">
-  <meta name="description" content="IRAA — عبايات معاصرة بروح عربية. اكتشفي قطعاً صُممت لترافقك كل يوم.">
-  <title>IRAA — أناقة تشبهك</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=4">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#4d1424">
+<meta name="description" content="IRAA — مساحة للأناقة العربية المعاصرة. المجموعة الأولى قريباً.">
+<title>IRAA — أناقة تبدأ بكِ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
-  <div class="announcement">IRAA — عبايات معاصرة بروح عربية <span>✦</span></div>
-  <header class="site-header">
-    <button class="icon-button menu-toggle" aria-label="فتح القائمة" aria-expanded="false"><span></span><span></span></button>
-    <nav class="desktop-nav" aria-label="القائمة الرئيسية">
-      <a href="#collection">المجموعة</a><a href="#story">حكايتنا</a><a href="#journal">دفتر IRAA</a>
-    </nav>
-    <a class="wordmark" href="#top" aria-label="IRAA الصفحة الرئيسية">IRAA<span class="wordmark-dot">✳</span></a>
-    <div class="header-actions">
-      <button class="icon-button search-toggle" aria-label="بحث"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
-      <button class="icon-button bag-toggle" aria-label="حقيبة التسوق"><svg viewBox="0 0 24 24"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><span class="bag-count">0</span></button>
-    </div>
-  </header>
-  <div class="search-panel" hidden><label for="search-input">ابحثي عن قطعة تحبينها</label><div class="search-line"><input id="search-input" type="search" placeholder="عباية، لون، مناسبة…"><button class="search-close" aria-label="إغلاق البحث">×</button></div></div>
-  <nav class="mobile-nav" aria-label="القائمة"><a href="#collection">تسوّقي العبايات</a><a href="#story">حكايتنا</a><a href="#journal">دفتر IRAA</a></nav>
-
-  <main id="top">
-    <section class="hero">
-      <div class="hero-copy"><p class="eyebrow"><span></span> مجموعة — ٠١ / ٢٠٢٦</p><h1>الأناقة<br>في <em>هدوئها.</em></h1><p class="hero-lede">عبايات صُممت لتكون امتداداً لكِ.<br>راحة تعرفينها، وتفاصيل تذكرينها.</p><a class="button button-cream" href="#collection">اكتشفي المجموعة <span>←</span></a><div class="hero-foot"><span>مصممة في القاهرة</span><span>١ / ٠٣</span></div></div>
-      <div class="hero-image"><img src="https://images.unsplash.com/photo-1760083545495-b297b1690672?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=82&w=1500" alt="عباية بيج أنيقة بتفاصيل مطرزة" fetchpriority="high"><div class="image-note"><span class="note-mark">✳</span><span>فنّ البساطة<br><small>في كل تفصيلة</small></span></div></div>
-      <div class="hero-side-label">IRAA — MADE FOR YOUR EVERYDAY</div>
-    </section>
-
-    <section class="ticker" aria-label="قيم العلامة"><div>تُشبهك <span>✳</span> تُرافقك <span>✳</span> IRAA <span>✳</span> تُشبهك <span>✳</span> تُرافقك <span>✳</span> IRAA <span>✳</span></div></section>
-
-    <section id="collection" class="collection section-wrap">
-      <div class="section-heading"><div><p class="eyebrow dark-eyebrow">من خزانتنا إليكِ</p><h2>اختاري <em>حكايتك.</em></h2></div><p>خطوط هادئة، أقمشة محبوبة، وتفاصيل<br class="desktop-only"> تمنح يومك حضوراً مختلفاً.</p></div>
-      <div class="shop-toolbar"><div class="category-tabs" role="group" aria-label="تصفية المنتجات"><button class="tab active" data-filter="all">الكل <span>٠٦</span></button><button class="tab" data-filter="daily">كل يوم</button><button class="tab" data-filter="occasion">مناسبات</button><button class="tab" data-filter="sets">أطقم</button></div><label class="sort-label">ترتيب حسب <select id="sort-select" aria-label="ترتيب المنتجات"><option value="featured">مختاراتنا</option><option value="price-up">السعر: الأقل أولاً</option><option value="price-down">السعر: الأعلى أولاً</option></select></label></div>
-      <div id="product-grid" class="product-grid" aria-live="polite"></div>
-      <p id="empty-results" class="empty-results" hidden>لم نجد ما تبحثين عنه. جرّبي كلمة أو تصنيفاً آخر.</p>
-      <div class="collection-bottom"><span>تُصنع القطع بحبّ، وتصل إليكِ كما تستحقين.</span><a href="#collection" class="text-link" id="clear-filter">استكشفي كل القطع <span>←</span></a></div>
-    </section>
-
-    <section id="story" class="story"><div class="story-image"><img src="https://images.unsplash.com/photo-1762605135376-ae5af70a5628?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=82&w=1400" alt="امرأتان ترتديان عبايات بألوان طبيعية" loading="lazy"></div><div class="story-copy"><p class="eyebrow">حكاية IRAA</p><h2>صُنعت لتكون<br>جزءاً <em>منكِ.</em></h2><p>بدأت IRAA بسؤال بسيط: كيف تبدو الأناقة حين تشبه حياتنا؟ وجدنا الإجابة في تفاصيل صغيرة، وأقمشة تمنحكِ مساحة لتكوني أنتِ، من أول النهار إلى آخره.</p><a class="text-link light-link" href="#journal">اكتشفي حكايتنا <span>←</span></a><div class="story-stamp">IRAA<br><small>من القاهرة، إليكِ</small></div></div></section>
-
-    <section class="promise section-wrap"><p class="eyebrow dark-eyebrow">لأن التفاصيل تهمّ</p><div class="promise-grid"><article><span class="promise-icon">✳</span><h3>قماش يريحك</h3><p>ملمس ناعم وقصّات تنساب مع إيقاع يومك.</p></article><article><span class="promise-icon">↗</span><h3>تفاصيل لها معنى</h3><p>لمسات مدروسة تُضيف الكثير دون مبالغة.</p></article><article><span class="promise-icon">♡</span><h3>صُنعت لتدوم</h3><p>قطع تختارينها اليوم وتعودين إليها غداً.</p></article></div></section>
-
-    <section id="journal" class="newsletter"><div><p class="eyebrow">رسائل من IRAA</p><h2>مساحة صغيرة<br>للأشياء <em>الجميلة.</em></h2><p>انضمي إلى دفترنا — جديد المجموعة، حكايات، ولمحات تُلهمك.</p></div><form id="newsletter-form"><label for="newsletter-email">بريدك الإلكتروني</label><div class="newsletter-input"><input id="newsletter-email" type="email" placeholder="name@example.com" required disabled><button type="submit" aria-label="الاشتراك" disabled>←</button></div><small id="newsletter-note">التسجيل بالبريد سيتاح عند إعداد خدمة الرسائل.</small></form></section>
-  </main>
-  <footer class="site-footer"><a class="footer-logo" href="#top">IRAA<span>✳</span></a><p>عبايات معاصرة بروح عربية.</p><div class="footer-links"><a href="#collection">تسوّقي</a><a href="#story">حكايتنا</a><a href="#journal">دفتر IRAA</a></div><small>© IRAA ٢٠٢٦ — صُنعت بحبّ في القاهرة</small></footer>
-
-  <div class="overlay" hidden></div>
-  <aside class="cart-drawer" aria-label="حقيبة التسوق" aria-hidden="true"><div class="drawer-head"><div><p class="eyebrow dark-eyebrow">اختياراتكِ</p><h2>حقيبتك <em>الجميلة.</em></h2></div><button class="drawer-close" aria-label="إغلاق الحقيبة">×</button></div><div id="cart-items" class="cart-items"></div><div id="cart-empty" class="cart-empty"><span>♡</span><p>حقيبتكِ ما زالت تنتظرك.</p><button class="text-link continue-shopping">اكتشفي المجموعة ←</button></div><div class="cart-summary" hidden><p><span>المجموع الفرعي</span><strong id="cart-total"></strong></p><small>يُؤكَّد التوصيل والدفع عبر واتساب قبل تثبيت الطلب.</small><button class="button button-wine checkout-open">إتمام الطلب <span>←</span></button></div></aside>
-  <dialog id="product-dialog" class="product-dialog"><button class="dialog-close" aria-label="إغلاق">×</button><div id="product-detail"></div></dialog>
-  <dialog id="checkout-dialog" class="checkout-dialog"><button class="dialog-close" aria-label="إغلاق">×</button><div class="checkout-intro"><p class="eyebrow dark-eyebrow">خطوة أخيرة</p><h2>إلى أين <em>نرسلها؟</em></h2><p id="checkout-status">تُفتح الطلبات بعد إضافة رقم واتساب الخاص بـ IRAA.</p></div><form id="checkout-form"><label>الاسم الكامل<input name="name" autocomplete="name" required minlength="2" placeholder="اسمكِ" disabled></label><label>العنوان بالتفصيل<textarea name="address" autocomplete="street-address" required minlength="8" rows="3" placeholder="الشارع، المنطقة، المحافظة" disabled></textarea></label><label>ملاحظات <span class="optional">اختياري</span><textarea name="notes" rows="2" placeholder="اللون أو المقاس، أو أي تفاصيل إضافية" disabled></textarea></label><div class="checkout-total"><span>قيمة المنتجات</span><strong id="checkout-total"></strong></div><small class="checkout-shipping-note">يُؤكَّد سعر التوصيل في واتساب، قبل موافقتكِ على الطلب.</small><button class="button button-wine" type="submit" disabled>الطلبات مغلقة مؤقتاً <span>←</span></button><a id="checkout-whatsapp-link" class="button button-wine" href="#" target="_blank" rel="noopener" hidden style="display:none">افتحي واتساب لإرسال الطلب <span>←</span></a><p id="checkout-note" class="form-note">لن نطلب بيانات التوصيل حتى تُفتح الطلبات.</p></form></dialog>
-  <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <script src="script.js?v=5"></script>
-</body>
-</html>
-
+<a class="skip-link" href="#main">انتقلي إلى المحتوى</a>
+<div class="announcement"><span>IRAA</span><i>✳</i> المجموعة الأولى — قريباً</div>
+<header class="site-header">
+<a class="wordmark" href="#top" aria-label="IRAA — الصفحة الرئيسية">IRAA<span>✳</span></a>
+<nav class="main-nav" aria-label="القائمة الرئيسية"><a href="#first-look">اللمحة الأولى</a><a href="#about">عن IRAA</a><a href="#launch">تابعينا</a></nav>
+<a class="header-contact" id="header-contact" href="#launch">تواصلي معنا <span>↗</span></a>
+<button class="menu-toggle" aria-label="فتح القائمة" aria-expanded="false"><span></span><span></span></button>
+</header>
+<nav class="mobile-nav" aria-label="القائمة"><a href="#first-look">اللمحة الأولى</a><a href="#about">عن IRAA</a><a href="#launch">تابعينا</a></nav>
+<main id="main">
+<section class="hero" id="top">
+<div class="hero-copy"><p class="eyebrow"><span class="eyebrow-line"></span>IRAA <span class="eyebrow-index">/ ٠١</span></p>
+<h1>أناقةٌ<br>تبدأ <em>بكِ.</em></h1>
+<p class="hero-description">مساحة جديدة للأزياء التي تشبهكِ.<br>حكايتنا تبدأ من هنا.</p>
+<a class="hero-cta" href="#first-look">اكتشفي اللمحة الأولى <span>↓</span></a>
+<div class="hero-meta"><span>قريباً</span><span class="meta-rule"></span><span>المجموعة الأولى من IRAA</span></div></div>
+<figure class="hero-image"><img src="images/iraa-first-look.jpg" alt="إطلالة عباية سوداء ضمن اللمحة الأولى من IRAA">
+<figcaption><span>اللمحة الأولى</span><span class="caption-star">✳</span><span>IRAA — ٠١</span></figcaption></figure>
+<span class="hero-side-note">A NEW CHAPTER IN ARABIC STYLE</span><span class="hero-deco" aria-hidden="true">إ</span>
+</section>
+<div class="marquee" aria-label="أناقة تبدأ بكِ"><div>أناقة تبدأ بكِ <span>✳</span> تُشبهكِ في كل تفصيلة <span>✳</span> IRAA <span>✳</span> أناقة تبدأ بكِ <span>✳</span> تُشبهكِ في كل تفصيلة <span>✳</span> IRAA <span>✳</span></div></div>
+<section class="first-look section-wrap" id="first-look"><div class="section-index"><span>٠١</span><span class="index-line"></span><span>البداية</span></div>
+<div class="first-look-grid"><div class="first-look-title"><p class="eyebrow dark">من IRAA، إليكِ</p><h2>هذه <em>البداية.</em></h2>
+<p>العبايات هي أول فصل في حكاية IRAA. نعمل على تجهيز المجموعة وتفاصيلها لتصلكِ بالصورة التي تستحقينها.</p><a class="under-link" href="#launch">كوني أول من يعرف <span>↙</span></a></div>
+<div class="coming-card"><span class="corner-mark">✳</span><p class="card-kicker">المجموعة الأولى</p><div class="card-arabic">قريباً</div><div class="card-divider"></div><p class="card-note">القطع، الألوان، والمقاسات<br>نكشف عنها عند اكتمال التفاصيل.</p><span class="card-number">IRAA / 01</span></div></div></section>
+<section class="about" id="about"><div class="about-art"><div class="art-ring"><span>✳</span></div><span class="art-word">IRAA</span><span class="art-sub">YOUR STORY, YOUR STYLE</span></div>
+<div class="about-copy"><p class="eyebrow">مساحة تشبهكِ</p><h2>أسلوبكِ<br>هو <em>الحكاية.</em></h2>
+<p>IRAA علامة للأزياء العربية، تبدأ بالعبايات وتتسع مع الوقت لأشياء أخرى تختارينها وتحبينها. نبدأ بخطوة هادئة، ونترك للتفاصيل أن تتكلم.</p><div class="about-signature">IRAA <span>✳</span></div></div></section>
+<section class="launch section-wrap" id="launch"><div class="launch-mark">IRAA <span>✳</span></div><p class="eyebrow dark">أول ما نفتح الباب</p><h2>كوني قريبة<br>من <em>البداية.</em></h2>
+<p class="launch-copy">تواصلي معنا على واتساب لتصلكِ أخبار المجموعة الأولى وموعد الإطلاق.</p>
+<a class="launch-button" id="whatsapp-link" href="#" target="_blank" rel="noopener noreferrer" hidden>تابعينا على واتساب <span>↗</span></a>
+<p class="contact-note" id="contact-note">قناة التواصل ستظهر هنا قريباً.</p><div class="launch-orbit" aria-hidden="true">إ</div></section></main>
+<footer class="footer"><a class="footer-logo" href="#top">IRAA<span>✳</span></a><p>أناقة تبدأ بكِ.</p><a id="footer-contact" href="#launch">تواصلي معنا <span>↗</span></a><small>© IRAA ٢٠٢٦</small></footer>
+<script src="script.js?v=6"></script></body></html>
