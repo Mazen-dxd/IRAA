@@ -1,29 +1,28 @@
 # IRAA store guide
 
-## Update the catalog and prices
+## Update products and prices
 
 1. Open products.json in the repository.
 2. Edit a product's name, price, caption, and description. Prices are Egyptian pounds as whole numbers, without commas.
-3. To change the available sizes, edit sizes. To change the color dots, edit colors using CSS color names or hex values such as #541426.
-4. To remove a product, remove its full object from the list. To add one, copy an object and give it a new, unique id.
-5. Save the file. GitHub Pages updates the site from the repository.
+3. Edit sizes and colors as needed. Colors can be CSS names or hex values such as #541426.
+4. To remove a product, remove its full object. To add one, copy an object and give it a unique id.
+5. Save the file. GitHub Pages will publish the change.
 
-Keep category set to daily, occasion, or sets so the collection filters continue to work. The number beside “الكل” updates itself from the catalog.
+Use daily, occasion, or sets for category. The count beside “الكل” updates from the catalog.
 
-## Replace product photos
+## Add product photos
 
-For a product image, use a clear portrait photo with the garment filling the frame. Once IRAA's own photos are ready, place them in images/ using short names such as safa-front.jpg. Change that product's image value in products.json to images/safa-front.jpg. Use one image per product for now; more views can be added later.
+Send IRAA's photos in this chat when ready. For the live repository, add clear portrait images to images/ using short filenames such as safa-front.jpg, then set that product's image value in products.json to images/safa-front.jpg. One main photo per product is supported now; we can add alternate views later.
 
-## Understand the cart and orders
+## Cart, orders, and payments
 
-- Each shopper has a separate cart saved in that shopper's browser. The shopper can change quantities or remove items from the bag.
-- Checkout currently stores the order draft in the shopper's browser. IRAA cannot see that record. Clearing browser data or using another device will not carry it over.
-- Newsletter signups are also stored only in the browser and are not delivered to IRAA.
-- The site does not process cards, charge customers, track shared inventory, calculate shipping, or send order notifications.
+- Every shopper has a separate cart saved in their own browser.
+- Demo checkout saves an order draft only on the shopper's device. IRAA cannot view or receive it.
+- Newsletter signup is also local to that browser and is not delivered to IRAA.
+- The site does not process payments, reserve shared inventory, calculate delivery fees, or send order notifications.
 
-Before accepting real orders, connect a store backend or set up checkout to send the order to an IRAA-owned WhatsApp number. Add the business number, confirmed product inventory and prices, delivery coverage and fees, exchange policy, and customer-service contact. Payment on delivery can then be offered as a real option; currently it is only displayed as sample storefront copy.
+Before taking real orders, connect checkout to an IRAA-owned WhatsApp Business number or a store backend. We also need confirmed prices, available stock/sizes, delivery areas and fees, exchange policy, and a customer-service contact. Once those are provided, checkout can be configured to send the order details to you. The demo currently does not confirm a purchase.
 
-## Current sample content
+## Sample content
 
-The six product names, descriptions, prices, colorways, and stock levels shown are demonstration content. Replace them with IRAA's confirmed catalog before taking orders. The current product images come from Unsplash as design placeholders and should be replaced with IRAA product photography.
-
+All six current products, prices, colors, descriptions, and availability are placeholders. Replace them with IRAA's confirmed catalog before accepting orders. Current Unsplash product images are visual placeholders and should be replaced with IRAA's own product photos.
