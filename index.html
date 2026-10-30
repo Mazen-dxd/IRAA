@@ -6,7 +6,7 @@
 <title>IRAA — أناقة تبدأ بكِ</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=8">
+<link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
 <a class="skip-link" href="#main">انتقلي إلى المحتوى</a>
@@ -14,6 +14,7 @@
 <header class="site-header">
 <a class="wordmark" href="#top" aria-label="IRAA — الصفحة الرئيسية">IRAA<span>✳</span></a>
 <nav class="main-nav" aria-label="القائمة الرئيسية"><a href="#first-look">اللمحة الأولى</a><a href="#about">عن IRAA</a><a href="#launch">تابعينا</a></nav>
+<button class="cart-toggle" id="cart-toggle" type="button" aria-label="حقيبة التسوق" aria-haspopup="dialog" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><span class="cart-count" id="cart-count">0</span></button>
 <a class="header-contact" id="header-contact" href="#launch">تواصلي معنا <span>↗</span></a>
 <button class="menu-toggle" aria-label="فتح القائمة" aria-expanded="false"><span></span><span></span></button>
 </header>
@@ -30,6 +31,7 @@
 <span class="hero-side-note">A NEW CHAPTER IN ARABIC STYLE</span><span class="hero-deco" aria-hidden="true">إ</span>
 </section>
 <div class="marquee" aria-label="أناقة تبدأ بكِ"><div>أناقة تبدأ بكِ <span>✳</span> تُشبهكِ في كل تفصيلة <span>✳</span> IRAA <span>✳</span> أناقة تبدأ بكِ <span>✳</span> تُشبهكِ في كل تفصيلة <span>✳</span> IRAA <span>✳</span></div></div>
+<section class="shop section-wrap" id="shop" hidden aria-labelledby="shop-title"><div class="section-index"><span>٠٢</span><span class="index-line"></span><span>المتجر</span></div><div class="shop-heading"><div><p class="eyebrow dark">اختيرت لكِ بعناية</p><h2 id="shop-title">مجموعة <em>IRAA.</em></h2></div><p>تصفحي القطع المتاحة واختاري المقاس واللون المناسبين.</p></div><div class="product-grid" id="product-grid"></div><p class="shop-status" id="shop-status" role="status" aria-live="polite"></p></section>
 <section class="first-look section-wrap" id="first-look"><div class="section-index"><span>٠١</span><span class="index-line"></span><span>البداية</span></div>
 <div class="first-look-grid"><div class="first-look-title"><p class="eyebrow dark">من IRAA، إليكِ</p><h2>هذه <em>البداية.</em></h2>
 <p>العبايات هي أول فصل في حكاية IRAA. نعمل على تجهيز المجموعة وتفاصيلها لتصلكِ بالصورة التي تستحقينها.</p><a class="under-link" href="#launch">كوني أول من يعرف <span>↙</span></a></div>
@@ -42,4 +44,5 @@
 <a class="launch-button" id="whatsapp-link" href="#" target="_blank" rel="noopener noreferrer" hidden>تابعينا على واتساب <span>↗</span></a>
 <p class="contact-note" id="contact-note">قناة التواصل ستظهر هنا قريباً.</p><div class="launch-orbit" aria-hidden="true">إ</div></section></main>
 <footer class="footer"><a class="footer-logo" href="#top">IRAA<span>✳</span></a><p>أناقة تبدأ بكِ.</p><a id="footer-contact" href="#launch">تواصلي معنا <span>↗</span></a><small>© IRAA ٢٠٢٦</small></footer>
-<script src="script.js?v=8"></script></body></html>
+<dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title"><div class="cart-head"><div><p class="eyebrow dark">اختياراتكِ</p><h2 id="cart-title">حقيبة IRAA</h2></div><button class="cart-close" id="cart-close" type="button" aria-label="إغلاق الحقيبة">×</button></div><div class="cart-empty" id="cart-empty">حقيبتكِ فارغة حالياً.</div><div class="cart-items" id="cart-items"></div><form class="checkout-form" id="checkout-form" hidden><p class="delivery-note">تأكيد الطلب وتكلفة التوصيل يتمان عبر واتساب.</p><label>الاسم<input name="customerName" autocomplete="name" required maxlength="80"></label><label>المنطقة / المدينة<input name="area" autocomplete="address-level2" required maxlength="100"></label><label>العنوان بالتفصيل<textarea name="address" autocomplete="street-address" required rows="2" maxlength="240"></textarea></label><div class="cart-total"><span>الإجمالي المبدئي</span><strong id="cart-total">٠ ج.م</strong></div><button class="checkout-button" type="submit">إرسال الطلب عبر واتساب <span>↗</span></button><p class="checkout-help">لن يتم تأكيد الطلب أو حجز القطعة قبل تواصلنا معكِ.</p></form></dialog>
+<script src="script.js?v=9"></script></body></html>
