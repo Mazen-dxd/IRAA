@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#541426">
+  <meta name="description" content="IRAA — عبايات معاصرة بروح عربية. اكتشفي قطعاً صُممت لترافقك كل يوم.">
+  <title>IRAA — أناقة تشبهك</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">قطعة تحكي حكايتك — شحن مجاني للطلبات فوق ٢٬٥٠٠ ج.م <span>✦</span></div>
+  <header class="site-header">
+    <button class="icon-button menu-toggle" aria-label="فتح القائمة" aria-expanded="false"><span></span><span></span></button>
+    <nav class="desktop-nav" aria-label="القائمة الرئيسية">
+      <a href="#collection">المجموعة</a><a href="#story">حكايتنا</a><a href="#journal">دفتر IRAA</a>
+    </nav>
+    <a class="wordmark" href="#top" aria-label="IRAA الصفحة الرئيسية">IRAA<span class="wordmark-dot">✳</span></a>
+    <div class="header-actions">
+      <button class="icon-button search-toggle" aria-label="بحث"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
+      <button class="icon-button bag-toggle" aria-label="حقيبة التسوق"><svg viewBox="0 0 24 24"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><span class="bag-count">0</span></button>
+    </div>
+  </header>
+  <div class="search-panel" hidden><label for="search-input">ابحثي عن قطعة تحبينها</label><div class="search-line"><input id="search-input" type="search" placeholder="عباية، لون، مناسبة…"><button class="search-close" aria-label="إغلاق البحث">×</button></div></div>
+  <nav class="mobile-nav" aria-label="القائمة"><a href="#collection">تسوّقي العبايات</a><a href="#story">حكايتنا</a><a href="#journal">دفتر IRAA</a></nav>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy"><p class="eyebrow"><span></span> مجموعة — ٠١ / ٢٠٢٦</p><h1>الأناقة<br>في <em>هدوئها.</em></h1><p class="hero-lede">عبايات صُممت لتكون امتداداً لكِ.<br>راحة تعرفينها، وتفاصيل تذكرينها.</p><a class="button button-cream" href="#collection">اكتشفي المجموعة <span>←</span></a><div class="hero-foot"><span>مصممة في القاهرة</span><span>١ / ٠٣</span></div></div>
+      <div class="hero-image"><img src="https://images.unsplash.com/photo-1762376268273-645db555eaf9?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=82&w=1500" alt="إطلالة عباية أنيقة في قوس معماري" fetchpriority="high"><div class="image-note"><span class="note-mark">✳</span><span>فنّ البساطة<br><small>في كل تفصيلة</small></span></div></div>
+      <div class="hero-side-label">IRAA — MADE FOR YOUR EVERYDAY</div>
+    </section>
+
+    <section class="ticker" aria-label="قيم العلامة"><div>تُشبهك <span>✳</span> تُرافقك <span>✳</span> IRAA <span>✳</span> تُشبهك <span>✳</span> تُرافقك <span>✳</span> IRAA <span>✳</span></div></section>
+
+    <section id="collection" class="collection section-wrap">
+      <div class="section-heading"><div><p class="eyebrow dark-eyebrow">من خزانتنا إليكِ</p><h2>اختاري <em>حكايتك.</em></h2></div><p>خطوط هادئة، أقمشة محبوبة، وتفاصيل<br class="desktop-only"> تمنح يومك حضوراً مختلفاً.</p></div>
+      <div class="shop-toolbar"><div class="category-tabs" role="group" aria-label="تصفية المنتجات"><button class="tab active" data-filter="all">الكل <span>٠٦</span></button><button class="tab" data-filter="daily">كل يوم</button><button class="tab" data-filter="occasion">مناسبات</button><button class="tab" data-filter="sets">أطقم</button></div><label class="sort-label">ترتيب حسب <select id="sort-select" aria-label="ترتيب المنتجات"><option value="featured">مختاراتنا</option><option value="price-up">السعر: الأقل أولاً</option><option value="price-down">السعر: الأعلى أولاً</option></select></label></div>
+      <div id="product-grid" class="product-grid" aria-live="polite"></div>
+      <p id="empty-results" class="empty-results" hidden>لم نجد ما تبحثين عنه. جرّبي كلمة أو تصنيفاً آخر.</p>
+      <div class="collection-bottom"><span>تُصنع القطع بحبّ، وتصل إليكِ كما تستحقين.</span><a href="#collection" class="text-link" id="clear-filter">استكشفي كل القطع <span>←</span></a></div>
+    </section>
+
+    <section id="story" class="story"><div class="story-image"><img src="https://images.unsplash.com/photo-1762605135376-ae5af70a5628?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=82&w=1400" alt="امرأتان ترتديان عبايات بألوان طبيعية" loading="lazy"></div><div class="story-copy"><p class="eyebrow">حكاية IRAA</p><h2>صُنعت لتكون<br>جزءاً <em>منكِ.</em></h2><p>بدأت IRAA بسؤال بسيط: كيف تبدو الأناقة حين تشبه حياتنا؟ وجدنا الإجابة في تفاصيل صغيرة، وأقمشة تمنحكِ مساحة لتكوني أنتِ، من أول النهار إلى آخره.</p><a class="text-link light-link" href="#journal">اكتشفي حكايتنا <span>←</span></a><div class="story-stamp">IRAA<br><small>من القاهرة، إليكِ</small></div></div></section>
+
+    <section class="promise section-wrap"><p class="eyebrow dark-eyebrow">لأن التفاصيل تهمّ</p><div class="promise-grid"><article><span class="promise-icon">✳</span><h3>قماش يريحك</h3><p>ملمس ناعم وقصّات تنساب مع إيقاع يومك.</p></article><article><span class="promise-icon">↗</span><h3>تفاصيل لها معنى</h3><p>لمسات مدروسة تُضيف الكثير دون مبالغة.</p></article><article><span class="promise-icon">♡</span><h3>صُنعت لتدوم</h3><p>قطع تختارينها اليوم وتعودين إليها غداً.</p></article></div></section>
+
+    <section id="journal" class="newsletter"><div><p class="eyebrow">رسائل من IRAA</p><h2>مساحة صغيرة<br>للأشياء <em>الجميلة.</em></h2><p>انضمي إلى دفترنا — جديد المجموعة، حكايات، ولمحات تُلهمك.</p></div><form id="newsletter-form"><label for="newsletter-email">بريدك الإلكتروني</label><div class="newsletter-input"><input id="newsletter-email" type="email" placeholder="name@example.com" required><button type="submit" aria-label="الاشتراك">←</button></div><small id="newsletter-note">لا رسائل كثيرة. فقط ما يستحق وقتك.</small></form></section>
+  </main>
+  <footer class="site-footer"><a class="footer-logo" href="#top">IRAA<span>✳</span></a><p>عبايات معاصرة بروح عربية.</p><div class="footer-links"><a href="#collection">تسوّقي</a><a href="#story">حكايتنا</a><a href="mailto:hello@iraa-eg.com">تواصلي معنا</a><a href="#journal">إنستغرام ↗</a></div><small>© IRAA ٢٠٢٦ — صُنعت بحبّ في القاهرة</small></footer>
+
+  <div class="overlay" hidden></div>
+  <aside class="cart-drawer" aria-label="حقيبة التسوق" aria-hidden="true"><div class="drawer-head"><div><p class="eyebrow dark-eyebrow">اختياراتكِ</p><h2>حقيبتك <em>الجميلة.</em></h2></div><button class="drawer-close" aria-label="إغلاق الحقيبة">×</button></div><div id="cart-items" class="cart-items"></div><div id="cart-empty" class="cart-empty"><span>♡</span><p>حقيبتكِ ما زالت تنتظرك.</p><button class="text-link continue-shopping">اكتشفي المجموعة ←</button></div><div class="cart-summary" hidden><p><span>المجموع الفرعي</span><strong id="cart-total"></strong></p><small>الشحن يُحسب عند تأكيد الطلب. الدفع عند الاستلام.</small><button class="button button-wine checkout-open">إتمام الطلب <span>←</span></button></div></aside>
+  <dialog id="product-dialog" class="product-dialog"><button class="dialog-close" aria-label="إغلاق">×</button><div id="product-detail"></div></dialog>
+  <dialog id="checkout-dialog" class="checkout-dialog"><button class="dialog-close" aria-label="إغلاق">×</button><div class="checkout-intro"><p class="eyebrow dark-eyebrow">خطوة أخيرة</p><h2>إلى أين <em>نرسلها؟</em></h2><p>تأكيد الطلب لا يتطلب دفعاً الآن. الدفع عند الاستلام.</p></div><form id="checkout-form"><label>الاسم الكامل<input name="name" autocomplete="name" required minlength="2" placeholder="اسمكِ"></label><label>رقم الهاتف<input name="phone" type="tel" autocomplete="tel" required pattern="[+0-9 ()-]{8,}" placeholder="01xxxxxxxxx"></label><label>العنوان بالتفصيل<textarea name="address" autocomplete="street-address" required minlength="8" rows="3" placeholder="الشارع، المنطقة، المحافظة"></textarea></label><label>ملاحظات <span class="optional">اختياري</span><textarea name="notes" rows="2" placeholder="اللون أو المقاس، أو أي تفاصيل إضافية"></textarea></label><div class="checkout-total"><span>إجمالي الطلب</span><strong id="checkout-total"></strong></div><button class="button button-wine" type="submit">تأكيد الطلب <span>←</span></button><p id="checkout-note" class="form-note">سجّلي طلبكِ وسنكون على تواصل لتأكيد تفاصيله.</p></form></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
+
